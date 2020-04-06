@@ -1,0 +1,44 @@
+PODS:
+  - DITranquillity (3.9.3):
+    - SwiftLazy
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxFlow (2.7.0):
+    - RxCocoa (>= 5.0.0)
+    - RxSwift (>= 5.0.0)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SwiftLazy (1.1.7)
+  - Swinject (2.7.1)
+
+DEPENDENCIES:
+  - DITranquillity
+  - RxCocoa (~> 5)
+  - RxFlow
+  - RxSwift (~> 5)
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - DITranquillity
+    - RxCocoa
+    - RxFlow
+    - RxRelay
+    - RxSwift
+    - SwiftLazy
+    - Swinject
+
+SPEC CHECKSUMS:
+  DITranquillity: 7aba075b73dbb1f321a1218dd3d9f1bd5ad9427b
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxFlow: 605ef6364d7e937bea8f9507a1e99a431cdc2493
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SwiftLazy: dcb1edc6c2b633ba2e68f28554d9dd6d1c0bfd13
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+
+PODFILE CHECKSUM: 20e5268f1fda2d17777eaf1dc73cd1602355aacb
+
+COCOAPODS: 1.9.1
