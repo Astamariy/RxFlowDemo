@@ -25,6 +25,7 @@ final class PetDetailAssembly: Assembly {
             let viewModel = PetDetailViewModel(petService: petService, petId: petId)
             return viewModel
         }
+        .inObjectScope(.transient)
     }
     
 }

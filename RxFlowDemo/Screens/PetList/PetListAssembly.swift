@@ -17,13 +17,14 @@ final class PetListAssembly: Assembly {
             return viewController
         }
         .implements(BaseViewController.self, name: String(describing: PetListViewController.self))
-        .inObjectScope(.container)
+        .inObjectScope(.transient)
         
         container.register(PetListViewModelProtocol.self) { resolver in
             let petService = resolver.resolve(PetServiceProtocol.self)!
             let viewModel = PetListViewModel(petService: petService)
             return viewModel
         }
+        .inObjectScope(.transient)
         
     }
     
