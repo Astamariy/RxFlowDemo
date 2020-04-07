@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 import RxFlow
-import Swinject
+import DITranquillity
 
 
 @UIApplicationMain
@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: - Private properties
     private lazy var coordinator: AppFlowCoordinatorProtocol = AppFlowCoordinator(container: container)
-    private let container = Container()
+    private let container = DIContainer()
     
     // MARK: - Public properties
     

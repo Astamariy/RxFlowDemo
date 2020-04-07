@@ -8,7 +8,7 @@
 
 import RxSwift
 import RxFlow
-import Swinject
+import DITranquillity
 
 final class AppFlowCoordinator: AppFlowCoordinatorProtocol {
     
@@ -18,31 +18,35 @@ final class AppFlowCoordinator: AppFlowCoordinatorProtocol {
     
     private let coordinator = FlowCoordinator()
     
-    private var assembler: Assembler!
-    
-    private let container: Container
+    private let container: DIContainer
     
     func configure(window: UIWindow) {
         bindCoordinatorLogs()
-        coordinateAppFlow(window: window, container: container)
+        coordinateAppFlow(window: window)
     }
     
     // MARK: - Initialization
     
-    init(container: Container) {
+    init(container: DIContainer) {
         self.container = container
-        initAssembler()
+        initFramework()
     }
     
     // MARK: - Private methods
     
-    private func initAssembler() {
-        assembler = Assembler([AppFlowAssembly()], container: container)
+    private func initFramework() {
+        container.append(framework: AppFramework.self)
+        #if DEBUG
+          if !container.validate() {
+            fatalError("you has errors")
+          }
+        #endif
+        container.initializeSingletonObjects()
     }
     
-    private func coordinateAppFlow(window: UIWindow, container: Container) {
-        let appFlow = assembler.resolver.resolve(AppFlow.self)!
-        let appFlowStepper = assembler.resolver.resolve(AppFlowStepper.self)!
+    private func coordinateAppFlow(window: UIWindow) {
+        let appFlow: AppFlow = container.resolve()
+        let appFlowStepper: AppFlowStepper = container.resolve()
         
         Flows.whenReady(flow1: appFlow) { root in
             window.rootViewController = root

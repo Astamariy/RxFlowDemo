@@ -29,11 +29,12 @@
 		18BF37E3243BB3AD009A4E35 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37E2243BB3AD009A4E35 /* BaseViewModel.swift */; };
 		18BF37E6243BB3C8009A4E35 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37E5243BB3C8009A4E35 /* BaseViewController.swift */; };
 		18BF37E8243BB3E3009A4E35 /* BaseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37E7243BB3E3009A4E35 /* BaseViewModelProtocol.swift */; };
-		18BF37EC243C8F1F009A4E35 /* PetListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37EB243C8F1F009A4E35 /* PetListAssembly.swift */; };
-		18BF37EE243C90F7009A4E35 /* PetDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37ED243C90F7009A4E35 /* PetDetailAssembly.swift */; };
-		18BF37F2243C9B17009A4E35 /* PetFlowAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37F1243C9B17009A4E35 /* PetFlowAssembly.swift */; };
-		18BF37F4243C9D0D009A4E35 /* PetServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37F3243C9D0D009A4E35 /* PetServiceAssembly.swift */; };
-		18BF37F7243CA39F009A4E35 /* AppFlowAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37F6243CA39F009A4E35 /* AppFlowAssembly.swift */; };
+		18BF37EC243C8F1F009A4E35 /* PetListPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37EB243C8F1F009A4E35 /* PetListPart.swift */; };
+		18BF37EE243C90F7009A4E35 /* PetDetailPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37ED243C90F7009A4E35 /* PetDetailPart.swift */; };
+		18BF37F2243C9B17009A4E35 /* PetFlowPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37F1243C9B17009A4E35 /* PetFlowPart.swift */; };
+		18BF37F4243C9D0D009A4E35 /* PetServicePart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37F3243C9D0D009A4E35 /* PetServicePart.swift */; };
+		18BF37F7243CA39F009A4E35 /* AppFlowPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37F6243CA39F009A4E35 /* AppFlowPart.swift */; };
+		18BF37FC243CCC31009A4E35 /* AppFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37FB243CCC31009A4E35 /* AppFramework.swift */; };
 		18C7EE1D243B5EE700546FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7EE1C243B5EE700546FFD /* AppDelegate.swift */; };
 		18C7EE26243B5EE800546FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C7EE25243B5EE800546FFD /* Assets.xcassets */; };
 		18C7EE29243B5EE800546FFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C7EE27243B5EE800546FFD /* LaunchScreen.storyboard */; };
@@ -65,11 +66,12 @@
 		18BF37E2243BB3AD009A4E35 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		18BF37E5243BB3C8009A4E35 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		18BF37E7243BB3E3009A4E35 /* BaseViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelProtocol.swift; sourceTree = "<group>"; };
-		18BF37EB243C8F1F009A4E35 /* PetListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListAssembly.swift; sourceTree = "<group>"; };
-		18BF37ED243C90F7009A4E35 /* PetDetailAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailAssembly.swift; sourceTree = "<group>"; };
-		18BF37F1243C9B17009A4E35 /* PetFlowAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFlowAssembly.swift; sourceTree = "<group>"; };
-		18BF37F3243C9D0D009A4E35 /* PetServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetServiceAssembly.swift; sourceTree = "<group>"; };
-		18BF37F6243CA39F009A4E35 /* AppFlowAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowAssembly.swift; sourceTree = "<group>"; };
+		18BF37EB243C8F1F009A4E35 /* PetListPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListPart.swift; sourceTree = "<group>"; };
+		18BF37ED243C90F7009A4E35 /* PetDetailPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailPart.swift; sourceTree = "<group>"; };
+		18BF37F1243C9B17009A4E35 /* PetFlowPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFlowPart.swift; sourceTree = "<group>"; };
+		18BF37F3243C9D0D009A4E35 /* PetServicePart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetServicePart.swift; sourceTree = "<group>"; };
+		18BF37F6243CA39F009A4E35 /* AppFlowPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowPart.swift; sourceTree = "<group>"; };
+		18BF37FB243CCC31009A4E35 /* AppFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFramework.swift; sourceTree = "<group>"; };
 		18C7EE19243B5EE700546FFD /* RxFlowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxFlowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C7EE1C243B5EE700546FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C7EE25243B5EE800546FFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,7 +130,7 @@
 				1880FD05243B89D400965E13 /* PetDetailViewController.xib */,
 				1880FD09243B8B4000965E13 /* PetDetailViewModelProtocol.swift */,
 				1880FD0B243B8BA800965E13 /* PetDetailViewModel.swift */,
-				18BF37ED243C90F7009A4E35 /* PetDetailAssembly.swift */,
+				18BF37ED243C90F7009A4E35 /* PetDetailPart.swift */,
 			);
 			path = PetDetail;
 			sourceTree = "<group>";
@@ -147,7 +149,7 @@
 				1880FCF5243B771000965E13 /* PetFlow.swift */,
 				1880FCF8243B77B500965E13 /* PetFlowStep.swift */,
 				1880FD01243B810900965E13 /* PetFlowStepper.swift */,
-				18BF37F1243C9B17009A4E35 /* PetFlowAssembly.swift */,
+				18BF37F1243C9B17009A4E35 /* PetFlowPart.swift */,
 			);
 			name = PetFlow;
 			path = PetFlow/PetFlow;
@@ -159,7 +161,7 @@
 				1880FD14243B9E8400965E13 /* AppFlow.swift */,
 				1880FD1D243BA56B00965E13 /* AppFlowStep.swift */,
 				1880FD1F243BA5D300965E13 /* AppFlowStepper.swift */,
-				18BF37F6243CA39F009A4E35 /* AppFlowAssembly.swift */,
+				18BF37F6243CA39F009A4E35 /* AppFlowPart.swift */,
 			);
 			path = AppFlow;
 			sourceTree = "<group>";
@@ -188,9 +190,17 @@
 			children = (
 				1880FD0F243B93F800965E13 /* PetService.swift */,
 				1880FD12243B943700965E13 /* PetServiceProtocol.swift */,
-				18BF37F3243C9D0D009A4E35 /* PetServiceAssembly.swift */,
+				18BF37F3243C9D0D009A4E35 /* PetServicePart.swift */,
 			);
 			path = PetService;
+			sourceTree = "<group>";
+		};
+		18BF37FD243CCCA7009A4E35 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				18BF37FB243CCC31009A4E35 /* AppFramework.swift */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 		18C7EE10243B5EE700546FFD = {
@@ -214,6 +224,7 @@
 		18C7EE1B243B5EE700546FFD /* RxFlowDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18BF37FD243CCCA7009A4E35 /* Framework */,
 				18BF37E4243BB3B4009A4E35 /* Base */,
 				1880FD11243B93FE00965E13 /* Services */,
 				1880FD1A243BA3C400965E13 /* Coordinator */,
@@ -236,7 +247,7 @@
 				1880FCF3243B708300965E13 /* PetListViewModelProtocol.swift */,
 				1880FCF1243B707600965E13 /* PetListViewModel.swift */,
 				1880FCFC243B79AE00965E13 /* Pet.swift */,
-				18BF37EB243C8F1F009A4E35 /* PetListAssembly.swift */,
+				18BF37EB243C8F1F009A4E35 /* PetListPart.swift */,
 			);
 			path = PetList;
 			sourceTree = "<group>";
@@ -387,21 +398,22 @@
 				1880FD0A243B8B4000965E13 /* PetDetailViewModelProtocol.swift in Sources */,
 				1880FCF2243B707600965E13 /* PetListViewModel.swift in Sources */,
 				1880FD15243B9E8400965E13 /* AppFlow.swift in Sources */,
+				18BF37FC243CCC31009A4E35 /* AppFramework.swift in Sources */,
 				1880FD10243B93F800965E13 /* PetService.swift in Sources */,
 				1880FD1C243BA3FE00965E13 /* AppFlowCoordinatorProtocol.swift in Sources */,
 				18BF37E8243BB3E3009A4E35 /* BaseViewModelProtocol.swift in Sources */,
 				1880FD02243B810900965E13 /* PetFlowStepper.swift in Sources */,
-				18BF37F4243C9D0D009A4E35 /* PetServiceAssembly.swift in Sources */,
+				18BF37F4243C9D0D009A4E35 /* PetServicePart.swift in Sources */,
 				1880FD1E243BA56B00965E13 /* AppFlowStep.swift in Sources */,
 				1880FCF9243B77B500965E13 /* PetFlowStep.swift in Sources */,
 				1880FD19243BA24E00965E13 /* AppFlowCoordinator.swift in Sources */,
 				18C7EE1D243B5EE700546FFD /* AppDelegate.swift in Sources */,
-				18BF37F2243C9B17009A4E35 /* PetFlowAssembly.swift in Sources */,
+				18BF37F2243C9B17009A4E35 /* PetFlowPart.swift in Sources */,
 				1880FD06243B89D400965E13 /* PetDetailViewController.swift in Sources */,
 				1880FD13243B943700965E13 /* PetServiceProtocol.swift in Sources */,
-				18BF37EE243C90F7009A4E35 /* PetDetailAssembly.swift in Sources */,
-				18BF37EC243C8F1F009A4E35 /* PetListAssembly.swift in Sources */,
-				18BF37F7243CA39F009A4E35 /* AppFlowAssembly.swift in Sources */,
+				18BF37EE243C90F7009A4E35 /* PetDetailPart.swift in Sources */,
+				18BF37EC243C8F1F009A4E35 /* PetListPart.swift in Sources */,
+				18BF37F7243CA39F009A4E35 /* AppFlowPart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

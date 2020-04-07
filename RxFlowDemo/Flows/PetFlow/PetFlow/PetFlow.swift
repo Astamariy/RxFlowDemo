@@ -7,7 +7,7 @@
 //
 
 import RxFlow
-import Swinject
+import DITranquillity
 
 final class PetFlow: Flow {
     
@@ -19,9 +19,7 @@ final class PetFlow: Flow {
     
     // MARK: - Private properties
     
-    private var assembler: Assembler!
-    
-    private let container: Container
+    private let container: DIContainer
     
     private lazy var rootViewController: UINavigationController = {
         let viewController = UINavigationController()
@@ -31,9 +29,8 @@ final class PetFlow: Flow {
     
     // MARK: - Initialization
     
-    init(container: Container) {
+    init(container: DIContainer) {
         self.container = container
-        initAssembler()
     }
     
     // MARK: - Public methods
@@ -50,17 +47,6 @@ final class PetFlow: Flow {
     
     // MARK: - Private methods
     
-    private func initAssembler() {
-        assembler = Assembler(
-            [
-                PetServiceAssembly(),
-                PetListAssembly(),
-                PetDetailAssembly()
-            ],
-            container: container
-        )
-    }
-    
     private func push(viewController: BaseViewController) -> FlowContributors {
         rootViewController.pushViewController(viewController, animated: true)
         return .one(flowContributor: .contribute(
@@ -72,13 +58,14 @@ final class PetFlow: Flow {
     }
     
     private func petListScreen() -> FlowContributors {
-        let viewController = assembler.resolver.resolve(BaseViewController.self, name: String(describing: PetListViewController.self))!
+        let viewController: BaseViewController = container.resolve(name: String(describing: PetListViewController.self))
         return push(viewController: viewController)
     }
     
     private func petDetailScreen(with petId: Int) -> FlowContributors {
-        
-        let viewController = assembler.resolver.resolve(BaseViewController.self, name: String(describing: PetDetailViewController.self), argument: petId)!
+        let name = String(describing: PetDetailViewController.self)
+        container.extensions(for: PetDetailViewModelProtocol.self)?.setArgs(petId)
+        let viewController: BaseViewController = container.resolve(name: name)
         return push(viewController: viewController)
     }
     
