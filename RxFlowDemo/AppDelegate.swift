@@ -9,13 +9,15 @@
 import UIKit
 import RxSwift
 import RxFlow
+import Swinject
 
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: - Private properties
-    private let coordinator: AppFlowCoordinatorProtocol = AppFlowCoordinator()
+    private lazy var coordinator: AppFlowCoordinatorProtocol = AppFlowCoordinator(container: container)
+    private let container = Container()
     
     // MARK: - Public properties
     

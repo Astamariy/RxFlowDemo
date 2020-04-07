@@ -6,7 +6,7 @@
 //  Copyright © 2020 Рузманов Александр Юрьевич. All rights reserved.
 //
 
-import UIKit
+import Swinject
 
 protocol AppFlowCoordinatorProtocol {
     func configure(window: UIWindow)

@@ -7,6 +7,7 @@
 //
 
 import RxFlow
+import Swinject
 import UIKit
 
 final class AppFlow: Flow {
@@ -17,12 +18,18 @@ final class AppFlow: Flow {
         return self.rootViewController
     }
     
+    private var assembler: Assembler!
+    
+    private let container: Container
+    
     private let rootViewController: UIViewController
     
     // MARK: - Initialization
     
-    init() {
+    init(container: Container) {
         self.rootViewController = UIViewController()
+        self.container = container
+        initAssembler()
     }
     
     // MARK: - Public methods
@@ -37,13 +44,16 @@ final class AppFlow: Flow {
     
     // MARK: - Private methods
     
+    private func initAssembler() {
+        assembler = Assembler([PetFlowAssembly()], container: container)
+    }
+    
     private func navigationToPets() -> FlowContributors {
-        let petService = PetService()
-        let petFlow = PetFlow(petService: petService)
+        let petFlow = assembler.resolver.resolve(PetFlow.self)!
         Flows.whenReady(flow1: petFlow) { [unowned self] root in
             self.rootViewController.present(root, animated: true, completion: nil)
         }
-        let petStepper = PetFlowStepper()
+        let petStepper = assembler.resolver.resolve(PetFlowStepper.self)!
         return .one(
             flowContributor: .contribute(
                 withNextPresentable: petFlow,

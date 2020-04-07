@@ -13,14 +13,12 @@
 		1880FCF4243B708300965E13 /* PetListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880FCF3243B708300965E13 /* PetListViewModelProtocol.swift */; };
 		1880FCF6243B771000965E13 /* PetFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880FCF5243B771000965E13 /* PetFlow.swift */; };
 		1880FCF9243B77B500965E13 /* PetFlowStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880FCF8243B77B500965E13 /* PetFlowStep.swift */; };
-		1880FCFB243B796400965E13 /* PetListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880FCFA243B796400965E13 /* PetListConfigurator.swift */; };
 		1880FCFD243B79AE00965E13 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880FCFC243B79AE00965E13 /* Pet.swift */; };
 		1880FD02243B810900965E13 /* PetFlowStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880FD01243B810900965E13 /* PetFlowStepper.swift */; };
 		1880FD06243B89D400965E13 /* PetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880FD04243B89D400965E13 /* PetDetailViewController.swift */; };
 		1880FD07243B89D400965E13 /* PetDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1880FD05243B89D400965E13 /* PetDetailViewController.xib */; };
 		1880FD0A243B8B4000965E13 /* PetDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880FD09243B8B4000965E13 /* PetDetailViewModelProtocol.swift */; };
 		1880FD0C243B8BA800965E13 /* PetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880FD0B243B8BA800965E13 /* PetDetailViewModel.swift */; };
-		1880FD0E243B8CB600965E13 /* PetDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880FD0D243B8CB600965E13 /* PetDetailConfigurator.swift */; };
 		1880FD10243B93F800965E13 /* PetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880FD0F243B93F800965E13 /* PetService.swift */; };
 		1880FD13243B943700965E13 /* PetServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880FD12243B943700965E13 /* PetServiceProtocol.swift */; };
 		1880FD15243B9E8400965E13 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880FD14243B9E8400965E13 /* AppFlow.swift */; };
@@ -31,6 +29,11 @@
 		18BF37E3243BB3AD009A4E35 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37E2243BB3AD009A4E35 /* BaseViewModel.swift */; };
 		18BF37E6243BB3C8009A4E35 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37E5243BB3C8009A4E35 /* BaseViewController.swift */; };
 		18BF37E8243BB3E3009A4E35 /* BaseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37E7243BB3E3009A4E35 /* BaseViewModelProtocol.swift */; };
+		18BF37EC243C8F1F009A4E35 /* PetListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37EB243C8F1F009A4E35 /* PetListAssembly.swift */; };
+		18BF37EE243C90F7009A4E35 /* PetDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37ED243C90F7009A4E35 /* PetDetailAssembly.swift */; };
+		18BF37F2243C9B17009A4E35 /* PetFlowAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37F1243C9B17009A4E35 /* PetFlowAssembly.swift */; };
+		18BF37F4243C9D0D009A4E35 /* PetServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37F3243C9D0D009A4E35 /* PetServiceAssembly.swift */; };
+		18BF37F7243CA39F009A4E35 /* AppFlowAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF37F6243CA39F009A4E35 /* AppFlowAssembly.swift */; };
 		18C7EE1D243B5EE700546FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7EE1C243B5EE700546FFD /* AppDelegate.swift */; };
 		18C7EE26243B5EE800546FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C7EE25243B5EE800546FFD /* Assets.xcassets */; };
 		18C7EE29243B5EE800546FFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C7EE27243B5EE800546FFD /* LaunchScreen.storyboard */; };
@@ -46,14 +49,12 @@
 		1880FCF3243B708300965E13 /* PetListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListViewModelProtocol.swift; sourceTree = "<group>"; };
 		1880FCF5243B771000965E13 /* PetFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFlow.swift; sourceTree = "<group>"; };
 		1880FCF8243B77B500965E13 /* PetFlowStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFlowStep.swift; sourceTree = "<group>"; };
-		1880FCFA243B796400965E13 /* PetListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListConfigurator.swift; sourceTree = "<group>"; };
 		1880FCFC243B79AE00965E13 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		1880FD01243B810900965E13 /* PetFlowStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFlowStepper.swift; sourceTree = "<group>"; };
 		1880FD04243B89D400965E13 /* PetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailViewController.swift; sourceTree = "<group>"; };
 		1880FD05243B89D400965E13 /* PetDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PetDetailViewController.xib; sourceTree = "<group>"; };
 		1880FD09243B8B4000965E13 /* PetDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailViewModelProtocol.swift; sourceTree = "<group>"; };
 		1880FD0B243B8BA800965E13 /* PetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailViewModel.swift; sourceTree = "<group>"; };
-		1880FD0D243B8CB600965E13 /* PetDetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailConfigurator.swift; sourceTree = "<group>"; };
 		1880FD0F243B93F800965E13 /* PetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetService.swift; sourceTree = "<group>"; };
 		1880FD12243B943700965E13 /* PetServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetServiceProtocol.swift; sourceTree = "<group>"; };
 		1880FD14243B9E8400965E13 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
@@ -64,6 +65,11 @@
 		18BF37E2243BB3AD009A4E35 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		18BF37E5243BB3C8009A4E35 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		18BF37E7243BB3E3009A4E35 /* BaseViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelProtocol.swift; sourceTree = "<group>"; };
+		18BF37EB243C8F1F009A4E35 /* PetListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListAssembly.swift; sourceTree = "<group>"; };
+		18BF37ED243C90F7009A4E35 /* PetDetailAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailAssembly.swift; sourceTree = "<group>"; };
+		18BF37F1243C9B17009A4E35 /* PetFlowAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFlowAssembly.swift; sourceTree = "<group>"; };
+		18BF37F3243C9D0D009A4E35 /* PetServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetServiceAssembly.swift; sourceTree = "<group>"; };
+		18BF37F6243CA39F009A4E35 /* AppFlowAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowAssembly.swift; sourceTree = "<group>"; };
 		18C7EE19243B5EE700546FFD /* RxFlowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxFlowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C7EE1C243B5EE700546FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C7EE25243B5EE800546FFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,7 +128,7 @@
 				1880FD05243B89D400965E13 /* PetDetailViewController.xib */,
 				1880FD09243B8B4000965E13 /* PetDetailViewModelProtocol.swift */,
 				1880FD0B243B8BA800965E13 /* PetDetailViewModel.swift */,
-				1880FD0D243B8CB600965E13 /* PetDetailConfigurator.swift */,
+				18BF37ED243C90F7009A4E35 /* PetDetailAssembly.swift */,
 			);
 			path = PetDetail;
 			sourceTree = "<group>";
@@ -130,8 +136,7 @@
 		1880FD11243B93FE00965E13 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				1880FD0F243B93F800965E13 /* PetService.swift */,
-				1880FD12243B943700965E13 /* PetServiceProtocol.swift */,
+				18BF37F5243CA2D5009A4E35 /* PetService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 				1880FCF5243B771000965E13 /* PetFlow.swift */,
 				1880FCF8243B77B500965E13 /* PetFlowStep.swift */,
 				1880FD01243B810900965E13 /* PetFlowStepper.swift */,
+				18BF37F1243C9B17009A4E35 /* PetFlowAssembly.swift */,
 			);
 			name = PetFlow;
 			path = PetFlow/PetFlow;
@@ -153,6 +159,7 @@
 				1880FD14243B9E8400965E13 /* AppFlow.swift */,
 				1880FD1D243BA56B00965E13 /* AppFlowStep.swift */,
 				1880FD1F243BA5D300965E13 /* AppFlowStepper.swift */,
+				18BF37F6243CA39F009A4E35 /* AppFlowAssembly.swift */,
 			);
 			path = AppFlow;
 			sourceTree = "<group>";
@@ -174,6 +181,16 @@
 				18BF37E7243BB3E3009A4E35 /* BaseViewModelProtocol.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		18BF37F5243CA2D5009A4E35 /* PetService */ = {
+			isa = PBXGroup;
+			children = (
+				1880FD0F243B93F800965E13 /* PetService.swift */,
+				1880FD12243B943700965E13 /* PetServiceProtocol.swift */,
+				18BF37F3243C9D0D009A4E35 /* PetServiceAssembly.swift */,
+			);
+			path = PetService;
 			sourceTree = "<group>";
 		};
 		18C7EE10243B5EE700546FFD = {
@@ -218,8 +235,8 @@
 				18C7EE36243B6F8E00546FFD /* PetListViewController.swift */,
 				1880FCF3243B708300965E13 /* PetListViewModelProtocol.swift */,
 				1880FCF1243B707600965E13 /* PetListViewModel.swift */,
-				1880FCFA243B796400965E13 /* PetListConfigurator.swift */,
 				1880FCFC243B79AE00965E13 /* Pet.swift */,
+				18BF37EB243C8F1F009A4E35 /* PetListAssembly.swift */,
 			);
 			path = PetList;
 			sourceTree = "<group>";
@@ -365,7 +382,6 @@
 				1880FCEE243B700100965E13 /* PetTableViewCell.swift in Sources */,
 				1880FD0C243B8BA800965E13 /* PetDetailViewModel.swift in Sources */,
 				1880FCF4243B708300965E13 /* PetListViewModelProtocol.swift in Sources */,
-				1880FCFB243B796400965E13 /* PetListConfigurator.swift in Sources */,
 				1880FD20243BA5D300965E13 /* AppFlowStepper.swift in Sources */,
 				1880FCFD243B79AE00965E13 /* Pet.swift in Sources */,
 				1880FD0A243B8B4000965E13 /* PetDetailViewModelProtocol.swift in Sources */,
@@ -375,13 +391,17 @@
 				1880FD1C243BA3FE00965E13 /* AppFlowCoordinatorProtocol.swift in Sources */,
 				18BF37E8243BB3E3009A4E35 /* BaseViewModelProtocol.swift in Sources */,
 				1880FD02243B810900965E13 /* PetFlowStepper.swift in Sources */,
+				18BF37F4243C9D0D009A4E35 /* PetServiceAssembly.swift in Sources */,
 				1880FD1E243BA56B00965E13 /* AppFlowStep.swift in Sources */,
 				1880FCF9243B77B500965E13 /* PetFlowStep.swift in Sources */,
-				1880FD0E243B8CB600965E13 /* PetDetailConfigurator.swift in Sources */,
 				1880FD19243BA24E00965E13 /* AppFlowCoordinator.swift in Sources */,
 				18C7EE1D243B5EE700546FFD /* AppDelegate.swift in Sources */,
+				18BF37F2243C9B17009A4E35 /* PetFlowAssembly.swift in Sources */,
 				1880FD06243B89D400965E13 /* PetDetailViewController.swift in Sources */,
 				1880FD13243B943700965E13 /* PetServiceProtocol.swift in Sources */,
+				18BF37EE243C90F7009A4E35 /* PetDetailAssembly.swift in Sources */,
+				18BF37EC243C8F1F009A4E35 /* PetListAssembly.swift in Sources */,
+				18BF37F7243CA39F009A4E35 /* AppFlowAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

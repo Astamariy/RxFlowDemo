@@ -7,6 +7,7 @@
 //
 
 import RxFlow
+import Swinject
 
 final class PetFlow: Flow {
     
@@ -18,7 +19,9 @@ final class PetFlow: Flow {
     
     // MARK: - Private properties
     
-    private let petService: PetServiceProtocol
+    private var assembler: Assembler!
+    
+    private let container: Container
     
     private lazy var rootViewController: UINavigationController = {
         let viewController = UINavigationController()
@@ -28,8 +31,9 @@ final class PetFlow: Flow {
     
     // MARK: - Initialization
     
-    init(petService: PetServiceProtocol) {
-        self.petService = petService
+    init(container: Container) {
+        self.container = container
+        initAssembler()
     }
     
     // MARK: - Public methods
@@ -46,6 +50,17 @@ final class PetFlow: Flow {
     
     // MARK: - Private methods
     
+    private func initAssembler() {
+        assembler = Assembler(
+            [
+                PetServiceAssembly(),
+                PetListAssembly(),
+                PetDetailAssembly()
+            ],
+            container: container
+        )
+    }
+    
     private func push(viewController: BaseViewController) -> FlowContributors {
         rootViewController.pushViewController(viewController, animated: true)
         return .one(flowContributor: .contribute(
@@ -57,12 +72,13 @@ final class PetFlow: Flow {
     }
     
     private func petListScreen() -> FlowContributors {
-        let viewController = PetListConfigurator.configure(petService: petService)
+        let viewController = assembler.resolver.resolve(BaseViewController.self, name: String(describing: PetListViewController.self))!
         return push(viewController: viewController)
     }
     
     private func petDetailScreen(with petId: Int) -> FlowContributors {
-        let viewController = PetDetailConfigurator.configure(petService: petService, petId: petId)
+        
+        let viewController = assembler.resolver.resolve(BaseViewController.self, name: String(describing: PetDetailViewController.self), argument: petId)!
         return push(viewController: viewController)
     }
     
