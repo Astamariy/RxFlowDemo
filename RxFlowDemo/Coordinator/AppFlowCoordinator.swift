@@ -24,7 +24,7 @@ final class AppFlowCoordinator: AppFlowCoordinatorProtocol {
     
     func configure(window: UIWindow) {
         bindCoordinatorLogs()
-        coordinateAppFlow(window: window, container: container)
+        coordinateAppFlow(window: window)
     }
     
     // MARK: - Initialization
@@ -40,7 +40,7 @@ final class AppFlowCoordinator: AppFlowCoordinatorProtocol {
         assembler = Assembler([AppFlowAssembly()], container: container)
     }
     
-    private func coordinateAppFlow(window: UIWindow, container: Container) {
+    private func coordinateAppFlow(window: UIWindow) {
         let appFlow = assembler.resolver.resolve(AppFlow.self)!
         let appFlowStepper = assembler.resolver.resolve(AppFlowStepper.self)!
         
