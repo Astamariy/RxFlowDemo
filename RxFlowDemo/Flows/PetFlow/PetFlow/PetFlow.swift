@@ -46,8 +46,7 @@ final class PetFlow: Flow {
     
     // MARK: - Private methods
     
-    private func petListScreen() -> FlowContributors {
-        let viewController = PetListConfigurator.configure(petService: petService)
+    private func push(viewController: BaseViewController) -> FlowContributors {
         rootViewController.pushViewController(viewController, animated: true)
         return .one(flowContributor: .contribute(
             withNextPresentable: viewController,
@@ -57,15 +56,14 @@ final class PetFlow: Flow {
         )
     }
     
+    private func petListScreen() -> FlowContributors {
+        let viewController = PetListConfigurator.configure(petService: petService)
+        return push(viewController: viewController)
+    }
+    
     private func petDetailScreen(with petId: Int) -> FlowContributors {
         let viewController = PetDetailConfigurator.configure(petService: petService, petId: petId)
-        rootViewController.pushViewController(viewController, animated: true)
-        return .one(flowContributor: .contribute(
-            withNextPresentable: viewController,
-            withNextStepper: DefaultStepper(),
-            allowStepWhenNotPresented: false
-            )
-        )
+        return push(viewController: viewController)
     }
     
 }

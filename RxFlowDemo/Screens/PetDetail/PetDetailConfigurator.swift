@@ -12,7 +12,7 @@ final class PetDetailConfigurator {
     
     // MARK: - Configuration
     
-    static func configure(petService: PetServiceProtocol, petId: Int) -> UIViewController {
+    static func configure(petService: PetServiceProtocol, petId: Int) -> BaseViewController {
         let viewModel = PetDetailViewModel(petService: petService, petId: petId)
         let viewController = PetDetailViewController(viewModel: viewModel)
         return viewController

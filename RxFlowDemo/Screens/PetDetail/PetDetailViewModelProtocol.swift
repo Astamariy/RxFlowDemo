@@ -9,6 +9,6 @@
 import RxFlow
 import RxCocoa
 
-protocol PetDetailViewModelProtocol {
+protocol PetDetailViewModelProtocol: BaseViewModelProtocol {
     var pet: Driver<Pet> { get }
 }

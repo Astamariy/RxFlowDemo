@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class PetDetailViewController: UIViewController {
+class PetDetailViewController: BaseViewController {
     
     // MARK: - Private properties
     
@@ -29,10 +29,7 @@ class PetDetailViewController: UIViewController {
     
     init(viewModel: PetDetailViewModelProtocol) {
         self.viewModel = viewModel
-        super.init(
-            nibName: String(describing: PetDetailViewController.self),
-            bundle: Bundle.main
-        )
+        super.init(viewModel: viewModel)
     }
     
     required init?(coder: NSCoder) {

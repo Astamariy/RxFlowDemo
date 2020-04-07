@@ -9,7 +9,7 @@
 import RxRelay
 import RxCocoa
 
-class PetDetailViewModel: PetDetailViewModelProtocol {
+class PetDetailViewModel: BaseViewModel, PetDetailViewModelProtocol {
     
     // MARK: - Public properties
     
